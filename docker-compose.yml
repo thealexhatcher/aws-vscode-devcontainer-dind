@@ -1,0 +1,11 @@
+version: "3.9"
+   
+services:
+  hello1:
+    image: hello-world:latest
+    volumes:
+      - .:/tmp
+  hello2:
+    build: .
+    volumes:
+      - .:/tmp
